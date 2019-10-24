@@ -72,9 +72,10 @@ pre {
 }
 
 .landingcontent {
-  padding: 20% 20%;
-  color: white;
+  color: whitesmoke;
   text-align: center;
   width: 50%;
+  margin: 20%;
 }
+
 /*# sourceMappingURL=stylesheet.css.map */
