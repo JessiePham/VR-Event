@@ -51,17 +51,19 @@ pre {
 
 .navbar {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   overflow: auto;
   height: 5%;
   background-color: transparent;
-  margin: 15px 15px;
+  margin: 20px 20px;
 }
 
 .navbar img {
+  float: left;
   width: 200px;
   height: 300px;
 }
+/* Logo */
 
 .navbar nav {
   float: right;
@@ -72,6 +74,7 @@ pre {
   width: 20%;
   height: 20%;
 }
+/* Nav ICONS */
 
 .landing {
   overflow: auto;
@@ -79,7 +82,7 @@ pre {
   background-image: url("../img/Landing Image.jpg");
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .landingcontent {
