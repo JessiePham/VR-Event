@@ -51,11 +51,11 @@ pre {
 
 .navbar {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   overflow: auto;
   height: 5%;
   background-color: transparent;
-  margin: 20px 20px;
+  margin: 20px;
 }
 
 .navbar img {
@@ -78,11 +78,11 @@ pre {
 
 .landing {
   overflow: auto;
-  padding: 50px 5%;
+  /* padding: 50px; */
   background-image: url("../img/Landing Image.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -90,11 +90,12 @@ pre {
   color: whitesmoke;
   text-align: center;
   width: 50%;
-  margin: 20%;
+  margin: 25%;
+  align-content: center;
 }
 
 .landingcontent h1 {
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
