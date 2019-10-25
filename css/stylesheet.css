@@ -96,10 +96,27 @@ pre {
   width: 50%;
   margin: 25%;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
 }
 
 .landingcontent h1 {
-  padding-bottom: 40px;
+  padding-bottom: 25px;
+}
+
+.landingcontent p {
+  line-height: 25px;
+}
+
+.sponsors {
+  background-color: black;
+  padding: 20px 0 40px 0;
+  margin: 20px 0 40px 0;
+}
+
+.sponsors p {
+  padding-top: 10px;
+  color: grey;
+  text-align: center;
+  font-size: 12px;
 }
 /*# sourceMappingURL=stylesheet.css.map */
