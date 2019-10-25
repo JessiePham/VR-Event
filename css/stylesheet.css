@@ -124,7 +124,7 @@ pre {
 }
 
 .intro {
-  padding: 40px;
+  padding: 40px 40px 70px 40px;
   background-color: black;
   overflow: auto;
   display: inline-block;
@@ -147,5 +147,37 @@ pre {
   text-align: center;
   color: whitesmoke;
   padding: 50px;
+}
+
+.features {
+  background-color: black;
+  overflow: auto;
+  padding: 50px 0 0 0;
+  margin: 0;
+}
+
+.features h4 {
+  font-family: sans-serif;
+  font-size: 70px;
+  color: whitesmoke;
+}
+
+.features h5 {
+  font-size: 20px;
+  color: white;
+  line-height: 40px;
+}
+
+.features p {
+  color: white;
+  font-size: 12px;
+}
+
+.features .feature {
+  text-align: center;
+  width: 23%;
+  float: left;
+  padding: 10px 0 50px 0;
+  margin: 5%;
 }
 /*# sourceMappingURL=stylesheet.css.map */
