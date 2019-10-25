@@ -1,13 +1,101 @@
-@charset "UTF-8";
-
 .nest {
-  background-color: white;
+  background-color: none;
   width: 100%;
 }
 
-.navbar {
-  overflow: auto;
+* {
+  margin: 0%;
+  padding: 0%;
 }
-ul {
+
+h1 {
+  font-family: "Helvetica Neue";
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 55px;
+}
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+blockquote {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  height: 5%;
+  background-color: transparent;
+  margin: 20px;
+}
+
+.navbar img {
+  float: left;
+  width: 10vw;
+  height: 4vh;
+}
+/* Logo */
+
+.navbar nav {
   float: right;
 }
+
+.navbar nav img {
+  padding-left: 30px;
+  width: 20%;
+  height: 20%;
+}
+/* Nav ICONS */
+
+.landing {
+  overflow: auto;
+  /* padding: 50px; */
+  background-image: url("../img/Landing Image.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.landingcontent {
+  color: whitesmoke;
+  text-align: center;
+  width: 50%;
+  margin: 25%;
+  align-content: center;
+}
+
+.landingcontent h1 {
+  padding-bottom: 40px;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

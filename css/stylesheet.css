@@ -16,6 +16,7 @@ h1 {
   font-weight: 700;
   line-height: 55px;
 }
+
 h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -24,6 +25,7 @@ h3 {
   font-weight: 700;
   line-height: 15.4px;
 }
+
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -32,6 +34,7 @@ p {
   font-weight: 400;
   line-height: 20px;
 }
+
 blockquote {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 21px;
@@ -40,6 +43,7 @@ blockquote {
   font-weight: 400;
   line-height: 30px;
 }
+
 pre {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -63,8 +67,8 @@ pre {
   width: 10vw;
   height: 4vh;
 }
-/* Logo */
 
+/* Logo */
 .navbar nav {
   float: right;
 }
@@ -74,8 +78,8 @@ pre {
   width: 20%;
   height: 20%;
 }
-/* Nav ICONS */
 
+/* Nav ICONS */
 .landing {
   overflow: auto;
   /* padding: 50px; */
@@ -91,11 +95,11 @@ pre {
   text-align: center;
   width: 50%;
   margin: 25%;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
 .landingcontent h1 {
   padding-bottom: 40px;
 }
-
 /*# sourceMappingURL=stylesheet.css.map */
