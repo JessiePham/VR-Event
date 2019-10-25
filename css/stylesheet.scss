@@ -85,6 +85,7 @@ pre {
   width: 100vw;
   height: 100vh;
 }
+/* Landing IMAGE */
 
 .landingcontent {
   color: whitesmoke;
@@ -104,7 +105,8 @@ pre {
 .sponsors {
   background-color: black;
   padding: 20px 0 40px 0;
-  margin: 20px 0 40px 0;
+  margin: 20px 0 0 0;
+  box-shadow: 0px -50px 70px 50px black;
   p {
     padding-top: 10px;
     color: grey;
@@ -112,6 +114,32 @@ pre {
     font-size: 12px;
   }
   img {
+  }
+}
+.intro {
+  padding: 40px;
+  background-color: black;
+  overflow: auto;
+  display: inline-block;
+  .introtitle {
+    h3 {
+      color: whitesmoke;
+      text-align: center;
+      width: 40%;
+      padding: 50px 30%;
+      line-height: 25px;
+    }
+  }
+
+  .introvideo {
+    width: 80%;
+    padding: 0 10%;
+  }
+
+  p {
+    text-align: center;
+    color: whitesmoke;
+    padding: 50px;
   }
 }
 
