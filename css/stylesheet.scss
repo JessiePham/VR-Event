@@ -118,7 +118,7 @@ pre {
 }
 .intro {
   padding: 40px 40px 70px 40px;
-  background-color: #181818;
+  background-color: black;
   overflow: auto;
   display: inline-block;
   margin-bottom: -10px;
@@ -176,11 +176,13 @@ pre {
     margin: 5%;
   }
 }
+
 .tech {
   background-color: whitesmoke;
   overflow: auto;
   display: inline-block;
   padding-bottom: 5%;
+  margin-bottom: -10px;
   h3 {
     color: black;
     font-size: 40px;
@@ -207,7 +209,60 @@ pre {
 
       img {
         width: 100%;
-        height: 100%;
+        height: 90%;
+      }
+
+      h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        padding: 10px 0;
+      }
+
+      p {
+        text-align: left;
+        margin: 0px;
+        font-size: 12px;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+.Speakers {
+  background-color: whitesmoke;
+  overflow: auto;
+  display: inline-block;
+  padding-bottom: 5%;
+
+  h3 {
+    color: black;
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 10vw;
+    padding: 100px 65% 25px 5%;
+  }
+  p {
+    color: black;
+    padding: 0 45% 5% 5%;
+    margin-left: 10vw;
+    line-height: 20px;
+  }
+
+  .speakers-container {
+    margin-left: 10vw;
+    overflow: auto;
+    display: inline-block;
+    padding-right: 0 2% 5% 0;
+
+    .speaker {
+      width: 27%;
+      float: left;
+      text-align: left;
+      padding: 0 0% 2% 4%;
+
+      img {
+        width: 100%;
+        height: 90%;
       }
 
       h4 {
