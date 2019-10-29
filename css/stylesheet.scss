@@ -82,7 +82,7 @@ pre {
   background-image: url("../img/Landing Image.jpg");
   background-size: cover;
   background-position: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 /* Landing IMAGE */
@@ -118,22 +118,25 @@ pre {
 }
 .intro {
   padding: 40px 40px 70px 40px;
-  background-color: black;
+  background-color: #181818;
   overflow: auto;
   display: inline-block;
+  margin-bottom: -10px;
   .introtitle {
     h3 {
-      color: whitesmoke;
+      color: rgb(227, 227, 227);
       text-align: center;
       width: 40%;
       padding: 50px 30%;
       line-height: 25px;
+      font-weight: 400;
     }
   }
 
   .introvideo {
-    width: 80%;
-    padding: 0 10%;
+    width: 70%;
+    padding: 0 15%;
+    filter: brightness(80%);
   }
 
   p {
@@ -150,12 +153,14 @@ pre {
   margin: 0;
 
   h4 {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 70px;
     color: whitesmoke;
   }
   h5 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    font-weight: 600;
     color: white;
     line-height: 40px;
   }
@@ -169,6 +174,55 @@ pre {
     float: left;
     padding: 10px 0 50px 0;
     margin: 5%;
+  }
+}
+.tech {
+  background-color: whitesmoke;
+  overflow: auto;
+  display: inline-block;
+  padding-bottom: 5%;
+  h3 {
+    color: black;
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 10vw;
+    padding: 100px 65% 25px 5%;
+  }
+  p {
+    color: black;
+    padding: 0 45% 5% 5%;
+    margin-left: 10vw;
+    line-height: 20px;
+  }
+  .demo-container {
+    margin-left: 10vw;
+    overflow: auto;
+    display: inline-block;
+    padding-right: 2%;
+    .demo {
+      width: 27%;
+      float: left;
+      text-align: left;
+      padding: 0 0% 0 4%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        padding: 10px 0;
+      }
+
+      p {
+        text-align: left;
+        margin: 0px;
+        font-size: 12px;
+        padding: 0px;
+      }
+    }
   }
 }
 
