@@ -1,39 +1,65 @@
-.nest {
-  background-color: none;
-  width: 100%;
-}
-
 * {
   margin: 0%;
   padding: 0%;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 h1 {
-  font-family: "Helvetica Neue";
-  font-size: 50px;
+  font-family: "Barlow";
+  font-size: 85px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
-  line-height: 55px;
+  font-weight: 600;
+  line-height: 95%;
+  text-transform: uppercase;
 }
+
+h2 {
+  font-family: "Barlow";
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
 h3 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
   line-height: 15.4px;
 }
-p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-style: normal;
+
+h5 {
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
   font-variant: normal;
-  font-weight: 400;
-  line-height: 20px;
+  font-weight: 200;
+  line-height: 25px;
+}
+
+b1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 25px;
 }
 blockquote {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 21px;
   font-style: normal;
   font-variant: normal;
@@ -41,7 +67,7 @@ blockquote {
   line-height: 30px;
 }
 pre {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-variant: normal;
@@ -50,7 +76,8 @@ pre {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
+  top: 0px;
   width: 100%;
   overflow: auto;
   height: 5%;
@@ -89,47 +116,62 @@ pre {
 
 .landingcontent {
   color: whitesmoke;
-  text-align: center;
+  text-align: left;
   width: 50%;
-  margin: 25%;
+  padding: 15% 25% 35% 25%;
   align-content: center;
 
   h1 {
     padding-bottom: 25px;
   }
-  p {
-    line-height: 25px;
+  h2 {
+    font-size: 70px;
+    line-height: 65px;
+  }
+
+  :hover {
+    filter: invert(48%) sepia(100%) saturate(100%) hue-rotate(86deg)
+      brightness(118%) contrast(119%);
   }
 }
+// Landing texts
 
 .sponsors {
-  background-color: black;
+  background-color: #1c1e20;
   padding: 20px 0 40px 0;
   margin: 20px 0 0 0;
-  box-shadow: 0px -50px 70px 50px black;
+  box-shadow: 0px -50px 70px 50px #1c1e20;
+
   p {
     padding-top: 10px;
     color: grey;
     text-align: center;
     font-size: 12px;
   }
-  img {
+  .fill-red {
+    filter: invert(48%) sepia(100%) saturate(100%) hue-rotate(86deg)
+      brightness(118%) contrast(119%);
+  }
+
+  .fill-red:hover {
+    filter: grayscale(50%);
   }
 }
 .intro {
   padding: 40px 40px 70px 40px;
-  background-color: black;
+  background-color: #1c1e20;
   overflow: auto;
   display: inline-block;
   margin-bottom: -10px;
   .introtitle {
     h3 {
       color: rgb(227, 227, 227);
+      font-size: 18px;
       text-align: center;
       width: 40%;
       padding: 50px 30%;
       line-height: 25px;
-      font-weight: 400;
+      font-weight: 300;
     }
   }
 
@@ -147,20 +189,18 @@ pre {
 }
 
 .features {
-  background-color: black;
+  background-color: #1c1e20;
   overflow: auto;
-  padding: 50px 0 0 0;
-  margin: 0;
+  padding-left: 10vw;
 
-  h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
+  h2 {
+    font-size: 90px;
     color: whitesmoke;
   }
-  h5 {
-    font-family: Arial, Helvetica, sans-serif;
+  h3 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 100;
+    letter-spacing: 1px;
     color: white;
     line-height: 40px;
   }
@@ -183,39 +223,51 @@ pre {
   display: inline-block;
   padding-bottom: 5%;
   margin-bottom: -10px;
-  h3 {
-    color: black;
-    font-size: 40px;
-    line-height: 50px;
-    margin-left: 10vw;
-    padding: 100px 65% 25px 5%;
+  h2 {
+    line-height: 75px;
+    padding: 100px 60% 25px 14%;
+    background: -webkit-linear-gradient(blue, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   p {
     color: black;
-    padding: 0 45% 5% 5%;
+    padding: 0 30% 0% 30%;
     margin-left: 10vw;
-    line-height: 20px;
   }
   .demo-container {
     margin-left: 10vw;
     overflow: auto;
     display: inline-block;
-    padding-right: 2%;
+    padding: 5% 2% 0 0;
     .demo {
+      position: relative;
       width: 27%;
       float: left;
       text-align: left;
       padding: 0 0% 0 4%;
 
       img {
+        border-radius: 25px;
         width: 100%;
         height: 90%;
       }
 
+      img:hover {
+        box-shadow: 0px 5px 20px 10px cyan;
+      }
+
       h4 {
         font-family: Arial, Helvetica, sans-serif;
-        color: black;
+        color: darkturquoise;
         padding: 10px 0;
+        // testing
+        font-size: 40px;
+        font-weight: 300;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        // TODO: FIX TEXT STYLE
       }
 
       p {
@@ -225,6 +277,11 @@ pre {
         padding: 0px;
       }
     }
+  }
+  #activities {
+    color: dodgerblue;
+    padding: 50px 0px 50px 35%;
+    font-weight: 400;
   }
 }
 
@@ -234,25 +291,27 @@ pre {
   display: inline-block;
   padding-bottom: 5%;
 
-  h3 {
-    color: black;
-    font-size: 40px;
-    line-height: 50px;
-    margin-left: 10vw;
-    padding: 100px 65% 25px 5%;
+  h2 {
+    line-height: 75px;
+    padding: 100px 65% 25px 14%;
+    background: -webkit-linear-gradient(blue, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   p {
     color: black;
-    padding: 0 45% 5% 5%;
+    padding: 0 5% 0% 20%;
     margin-left: 10vw;
-    line-height: 20px;
+    columns: 2;
+    column-width: 40%;
+    column-gap: 30px;
   }
 
   .speakers-container {
     margin-left: 10vw;
     overflow: auto;
     display: inline-block;
-    padding-right: 0 2% 5% 0;
+    padding: 5% 2% 0% 0;
 
     .speaker {
       width: 27%;
@@ -261,24 +320,101 @@ pre {
       padding: 0 0% 2% 4%;
 
       img {
+        border-radius: 25px;
         width: 100%;
         height: 90%;
       }
 
+      img:hover {
+        box-shadow: 0px 5px 20px 10px cyan;
+      }
+
       h4 {
+        font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         color: black;
         padding: 10px 0;
       }
 
-      p {
+      h5 {
         text-align: left;
         margin: 0px;
-        font-size: 12px;
         padding: 0px;
       }
     }
   }
 }
 
+.box-area {
+  position: static;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box-area li {
+  position: relative;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(purple, blue);
+  opacity: 0;
+  animation: animate 15s linear infinite;
+  bottom: -150px;
+  border-radius: 20px;
+}
+
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translateY(-700px) rotate(720deg);
+    opacity: 0;
+  }
+}
 /*# sourceMappingURL=stylesheet.css.map */

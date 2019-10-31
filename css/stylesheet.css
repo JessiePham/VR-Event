@@ -1,24 +1,36 @@
-.nest {
-  background-color: none;
-  width: 100%;
-}
-
 * {
   margin: 0%;
   padding: 0%;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 h1 {
-  font-family: "Helvetica Neue";
-  font-size: 50px;
+  font-family: "Barlow";
+  font-size: 85px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
-  line-height: 55px;
+  font-weight: 600;
+  line-height: 95%;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Barlow";
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 h3 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
@@ -26,17 +38,30 @@ h3 {
   line-height: 15.4px;
 }
 
-p {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-style: normal;
+h5 {
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
   font-variant: normal;
-  font-weight: 400;
-  line-height: 20px;
+  font-weight: 200;
+  line-height: 25px;
+}
+
+b1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 25px;
 }
 
 blockquote {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 21px;
   font-style: normal;
   font-variant: normal;
@@ -45,7 +70,7 @@ blockquote {
 }
 
 pre {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-variant: normal;
@@ -54,7 +79,8 @@ pre {
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
+  top: 0px;
   width: 100%;
   overflow: auto;
   height: 5%;
@@ -93,9 +119,9 @@ pre {
 /* Landing IMAGE */
 .landingcontent {
   color: whitesmoke;
-  text-align: center;
+  text-align: left;
   width: 50%;
-  margin: 25%;
+  padding: 15% 25% 35% 25%;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -104,16 +130,22 @@ pre {
   padding-bottom: 25px;
 }
 
-.landingcontent p {
-  line-height: 25px;
+.landingcontent h2 {
+  font-size: 70px;
+  line-height: 65px;
+}
+
+.landingcontent :hover {
+  -webkit-filter: invert(48%) sepia(100%) saturate(100%) hue-rotate(86deg) brightness(118%) contrast(119%);
+          filter: invert(48%) sepia(100%) saturate(100%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 
 .sponsors {
-  background-color: black;
+  background-color: #1c1e20;
   padding: 20px 0 40px 0;
   margin: 20px 0 0 0;
-  -webkit-box-shadow: 0px -50px 70px 50px black;
-          box-shadow: 0px -50px 70px 50px black;
+  -webkit-box-shadow: 0px -50px 70px 50px #1c1e20;
+          box-shadow: 0px -50px 70px 50px #1c1e20;
 }
 
 .sponsors p {
@@ -123,9 +155,19 @@ pre {
   font-size: 12px;
 }
 
+.sponsors .fill-red {
+  -webkit-filter: invert(48%) sepia(100%) saturate(100%) hue-rotate(86deg) brightness(118%) contrast(119%);
+          filter: invert(48%) sepia(100%) saturate(100%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.sponsors .fill-red:hover {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
 .intro {
   padding: 40px 40px 70px 40px;
-  background-color: black;
+  background-color: #1c1e20;
   overflow: auto;
   display: inline-block;
   margin-bottom: -10px;
@@ -133,11 +175,12 @@ pre {
 
 .intro .introtitle h3 {
   color: #e3e3e3;
+  font-size: 18px;
   text-align: center;
   width: 40%;
   padding: 50px 30%;
   line-height: 25px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .intro .introvideo {
@@ -154,22 +197,20 @@ pre {
 }
 
 .features {
-  background-color: black;
+  background-color: #1c1e20;
   overflow: auto;
-  padding: 50px 0 0 0;
-  margin: 0;
+  padding-left: 10vw;
 }
 
-.features h4 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 70px;
+.features h2 {
+  font-size: 90px;
   color: whitesmoke;
 }
 
-.features h5 {
-  font-family: Arial, Helvetica, sans-serif;
+.features h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 100;
+  letter-spacing: 1px;
   color: white;
   line-height: 40px;
 }
@@ -195,29 +236,29 @@ pre {
   margin-bottom: -10px;
 }
 
-.tech h3 {
-  color: black;
-  font-size: 40px;
-  line-height: 50px;
-  margin-left: 10vw;
-  padding: 100px 65% 25px 5%;
+.tech h2 {
+  line-height: 75px;
+  padding: 100px 60% 25px 14%;
+  background: -webkit-linear-gradient(blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .tech p {
   color: black;
-  padding: 0 45% 5% 5%;
+  padding: 0 30% 0% 30%;
   margin-left: 10vw;
-  line-height: 20px;
 }
 
 .tech .demo-container {
   margin-left: 10vw;
   overflow: auto;
   display: inline-block;
-  padding-right: 2%;
+  padding: 5% 2% 0 0;
 }
 
 .tech .demo-container .demo {
+  position: relative;
   width: 27%;
   float: left;
   text-align: left;
@@ -225,14 +266,25 @@ pre {
 }
 
 .tech .demo-container .demo img {
+  border-radius: 25px;
   width: 100%;
   height: 90%;
 }
 
+.tech .demo-container .demo img:hover {
+  -webkit-box-shadow: 0px 5px 20px 10px cyan;
+          box-shadow: 0px 5px 20px 10px cyan;
+}
+
 .tech .demo-container .demo h4 {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  color: darkturquoise;
   padding: 10px 0;
+  font-size: 40px;
+  font-weight: 300;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .tech .demo-container .demo p {
@@ -242,6 +294,12 @@ pre {
   padding: 0px;
 }
 
+.tech #activities {
+  color: dodgerblue;
+  padding: 50px 0px 50px 35%;
+  font-weight: 400;
+}
+
 .Speakers {
   background-color: whitesmoke;
   overflow: auto;
@@ -249,26 +307,31 @@ pre {
   padding-bottom: 5%;
 }
 
-.Speakers h3 {
-  color: black;
-  font-size: 40px;
-  line-height: 50px;
-  margin-left: 10vw;
-  padding: 100px 65% 25px 5%;
+.Speakers h2 {
+  line-height: 75px;
+  padding: 100px 65% 25px 14%;
+  background: -webkit-linear-gradient(blue, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .Speakers p {
   color: black;
-  padding: 0 45% 5% 5%;
+  padding: 0 5% 0% 20%;
   margin-left: 10vw;
-  line-height: 20px;
+  -webkit-columns: 2;
+          columns: 2;
+  -webkit-column-width: 40%;
+          column-width: 40%;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
 }
 
 .Speakers .speakers-container {
   margin-left: 10vw;
   overflow: auto;
   display: inline-block;
-  padding-right: 0 2% 5% 0;
+  padding: 5% 2% 0% 0;
 }
 
 .Speakers .speakers-container .speaker {
@@ -279,20 +342,128 @@ pre {
 }
 
 .Speakers .speakers-container .speaker img {
+  border-radius: 25px;
   width: 100%;
   height: 90%;
 }
 
+.Speakers .speakers-container .speaker img:hover {
+  -webkit-box-shadow: 0px 5px 20px 10px cyan;
+          box-shadow: 0px 5px 20px 10px cyan;
+}
+
 .Speakers .speakers-container .speaker h4 {
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   padding: 10px 0;
 }
 
-.Speakers .speakers-container .speaker p {
+.Speakers .speakers-container .speaker h5 {
   text-align: left;
   margin: 0px;
-  font-size: 12px;
   padding: 0px;
+}
+
+.box-area {
+  position: static;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box-area li {
+  position: relative;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(blue));
+  background: linear-gradient(purple, blue);
+  opacity: 0;
+  -webkit-animation: animate 15s linear infinite;
+          animation: animate 15s linear infinite;
+  bottom: -150px;
+  border-radius: 20px;
+}
+
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(720deg);
+            transform: translateY(-700px) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 0.4;
+  }
+  100% {
+    -webkit-transform: translateY(-700px) rotate(720deg);
+            transform: translateY(-700px) rotate(720deg);
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=stylesheet.css.map */
