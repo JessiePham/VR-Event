@@ -26,7 +26,7 @@ sr.reveal(".demo", {
 
 sr.reveal("h2", {
   // delay: 150,
-  reset: true,
+  // reset: true,
   opacity: 0,
   scale: 0.75,
   duration: 500,
